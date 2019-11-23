@@ -1,7 +1,7 @@
 ﻿/*
  * MIT License
  *
- * Copyright(c) 2019 kelicto
+ * Copyright(c) 2019 KeLi
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@
 	 |  | C:\>FILE -INFO                                     |  |  |     | -==----'|      |
 	 |  |                                                    |  |  |     |         |      |
 	 |  |                                                    |  |  |/----|`---=    |      |
-	 |  |              Author: kelicto                       |  |  |     |         |      |
+	 |  |              Author: KeLi                          |  |  |     |         |      |
 	 |  |              Email: kelistudy@163.com              |  |  |     |         |      |
 	 |  |              Creation Time: 10/30/2019 01:09:39 PM |  |  |     |         |      |
 	 |  | C:\>_                                              |  |  |     | -==----'|      |
@@ -46,11 +46,13 @@
 		/_==__==========__==_ooo__ooo=_/'   /___________,"
 */
 
-namespace KeLi.ChartStudy.App
+namespace KeLi.ChartStudy.App.Entities
 {
     public class ResTotal
     {
-        public ResTotal(){}
+        public ResTotal()
+        {
+        }
 
         public ResTotal(string categoryName, int categoryNum)
         {
