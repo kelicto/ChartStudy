@@ -58,9 +58,9 @@ using KeLi.ChartStudy.App.Properties;
 
 namespace KeLi.ChartStudy.App.Forms
 {
-    public partial class StudyForm : Form
+    public partial class StudyFrm : Form
     {
-        public StudyForm()
+        public StudyFrm()
         {
             InitializeComponent();
 

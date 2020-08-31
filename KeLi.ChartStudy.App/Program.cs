@@ -59,7 +59,7 @@ namespace KeLi.ChartStudy.App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudyForm());
+            Application.Run(new StudyFrm());
         }
     }
 }

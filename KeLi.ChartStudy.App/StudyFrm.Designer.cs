@@ -1,6 +1,6 @@
 ﻿namespace KeLi.ChartStudy.App.Forms
 {
-    partial class StudyForm
+    partial class StudyFrm
     {
         /// <summary>
         /// Required designer variable.
