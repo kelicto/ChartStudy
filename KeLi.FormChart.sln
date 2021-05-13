@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.ChartStudy.App", "KeLi.ChartStudy.App\KeLi.ChartStudy.App.csproj", "{DAC3D742-CE89-43E9-A83E-0C2F6F420D0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.FormChart.App", "KeLi.FormChart.App\KeLi.FormChart.App.csproj", "{DAC3D742-CE89-43E9-A83E-0C2F6F420D0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

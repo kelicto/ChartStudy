@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DAC3D742-CE89-43E9-A83E-0C2F6F420D0C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>KeLi.ChartStudy.App</RootNamespace>
-    <AssemblyName>KeLi.ChartStudy.App</AssemblyName>
+    <RootNamespace>KeLi.FormChart.App</RootNamespace>
+    <AssemblyName>KeLi.FormChart.App</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,23 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="StudyFrm.cs">
+    <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudyFrm.Designer.cs">
-      <DependentUpon>StudyFrm.cs</DependentUpon>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\ResDetail.cs" />
-    <Compile Include="Entities\ResTotal.cs" />
-    <EmbeddedResource Include="StudyFrm.resx">
-      <DependentUpon>StudyFrm.cs</DependentUpon>
+    <Compile Include="DataModels\ResourceDetail.cs" />
+    <Compile Include="DataModels\ResourceTotal.cs" />
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +69,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -84,10 +84,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ResDetailInfo.xml" />
+    <None Include="Resources\ResourceDetailData.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ResTotalInfo.xml" />
+    <None Include="Resources\ResourceTotalData.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

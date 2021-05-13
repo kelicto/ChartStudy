@@ -1,4 +1,4 @@
-﻿namespace KeLi.ChartStudy.App.Forms
+﻿namespace KeLi.FormChart.App
 {
     partial class StudyFrm
     {

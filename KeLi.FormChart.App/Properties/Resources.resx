@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ResDetailInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ResDetailInfo.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+  <data name="ResourceDetailData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResourceDetailData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
   </data>
-  <data name="ResTotalInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ResTotalInfo.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+  <data name="ResourceTotalData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResourceTotalData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
   </data>
 </root>

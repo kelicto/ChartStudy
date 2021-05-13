@@ -1,40 +1,14 @@
-﻿
-
-/*
-			 ,---------------------------------------------------,              ,---------,
-		,----------------------------------------------------------,          ,"        ,"|
-	  ,"                                                         ,"|        ,"        ,"  |
-	 +----------------------------------------------------------+  |      ,"        ,"    |
-	 |  .----------------------------------------------------.  |  |     +---------+      |
-	 |  | C:\>FILE -INFO                                     |  |  |     | -==----'|      |
-	 |  |                                                    |  |  |     |         |      |
-	 |  |                                                    |  |  |/----|`---=    |      |
-	 |  |              Author: KeLi                          |  |  |     |         |      |
-	 |  |              Email: kelicto@protonmail.com         |  |  |     |         |      |
-	 |  |              Creation Time:  |  |  |     |         |      |
-	 |  | C:\>_                                              |  |  |     | -==----'|      |
-	 |  |                                                    |  |  |   ,/|==== ooo |      ;
-	 |  |                                                    |  |  |  // |(((( [66]|    ,"
-	 |  `----------------------------------------------------'  |," .;'| |((((     |  ,"
-	 +----------------------------------------------------------+  ;;  | |         |,"
-		/_)_________________________________________________(_/  //'   | +---------+
-		   ___________________________/___  `,
-		  /  oooooooooooooooo  .o.  oooo /,   \,"-----------
-		 / ==ooooooooooooooo==.o.  ooo= //   ,`\--{)B     ,"
-		/_==__==========__==_ooo__ooo=_/'   /___________,"
-*/
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml.Serialization;
-using KeLi.ChartStudy.App.Entities;
-using KeLi.ChartStudy.App.Properties;
 
-namespace KeLi.ChartStudy.App.Forms
+using KeLi.FormChart.App.DataModels;
+
+namespace KeLi.FormChart.App
 {
     public partial class StudyFrm : Form
     {
@@ -49,7 +23,7 @@ namespace KeLi.ChartStudy.App.Forms
 
         private void BindData()
         {
-            var resDetails = GetResDetailList();
+            var resDetails = GetResourceDetailData();
 
             // Must call ToList method, otherwise runtime error.
             var floors = resDetails.Select(s => s.CategoryName).ToList();
@@ -57,7 +31,7 @@ namespace KeLi.ChartStudy.App.Forms
             var usableNums = resDetails.Select(s => s.UsableNum).ToList();
             var reservationNums = resDetails.Select(s => s.ReservationNum).ToList();
 
-            var totalReses = GetTotalResList();
+            var totalReses = GetResourceTotalData();
 
             // Must call ToList method, otherwise runtime error.
             var ctgs = totalReses.Select(s => s.CategoryName).ToList();
@@ -103,20 +77,20 @@ namespace KeLi.ChartStudy.App.Forms
             crt.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
         }
 
-        private static List<ResDetail> GetResDetailList()
+        private static List<ResourceDetail> GetResourceDetailData()
         {
-            var sr = new StringReader(Resources.ResDetailInfo);
-            var serializer = new XmlSerializer(typeof(List<ResDetail>));
+            var sr = new StringReader(Resources.ResourceDetailData);
+            var serializer = new XmlSerializer(typeof(List<ResourceDetail>));
 
-            return serializer.Deserialize(sr) as List<ResDetail>;
+            return serializer.Deserialize(sr) as List<ResourceDetail>;
         }
 
-        private static List<ResTotal> GetTotalResList()
+        private static List<ResourceTotal> GetResourceTotalData()
         {
-            var sr = new StringReader(Resources.ResTotalInfo);
-            var serializer = new XmlSerializer(typeof(List<ResTotal>));
+            var sr = new StringReader(Resources.ResourceTotalData);
+            var serializer = new XmlSerializer(typeof(List<ResourceTotal>));
 
-            return serializer.Deserialize(sr) as List<ResTotal>;
+            return serializer.Deserialize(sr) as List<ResourceTotal>;
         }
     }
 }
