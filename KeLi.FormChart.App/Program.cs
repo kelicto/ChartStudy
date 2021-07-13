@@ -10,7 +10,7 @@ namespace KeLi.FormChart.App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudyFrm());
+            Application.Run(new MainForm());
         }
     }
 }

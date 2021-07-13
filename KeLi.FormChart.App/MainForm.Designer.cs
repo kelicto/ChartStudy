@@ -1,6 +1,6 @@
 ﻿namespace KeLi.FormChart.App
 {
-    partial class StudyFrm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -75,14 +75,13 @@
             this.crtTotalInfo.Series.Add(series7);
             this.crtTotalInfo.Size = new System.Drawing.Size(389, 295);
             this.crtTotalInfo.TabIndex = 2;
-            this.crtTotalInfo.Text = "chart3";
             title4.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             title4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
             title4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
             title4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             title4.Name = "Title1";
-            title4.Text = "资源总览";
+            title4.Text = "Total Preview";
             this.crtTotalInfo.Titles.Add(title4);
             // 
             // crtFloorRes
@@ -118,7 +117,7 @@
             series8.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series8.IsValueShownAsLabel = true;
             series8.Legend = "Legend1";
-            series8.Name = "已用";
+            series8.Name = "Used";
             series9.ChartArea = "ChartArea1";
             series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
             series9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(80)))));
@@ -126,20 +125,19 @@
             series9.IsValueShownAsLabel = true;
             series9.LabelForeColor = System.Drawing.Color.White;
             series9.Legend = "Legend1";
-            series9.Name = "可用";
+            series9.Name = "Usable";
             series10.ChartArea = "ChartArea1";
             series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
             series10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             series10.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series10.IsValueShownAsLabel = true;
             series10.Legend = "Legend1";
-            series10.Name = "预留";
+            series10.Name = "Reserved";
             this.crtFloorRes.Series.Add(series8);
             this.crtFloorRes.Series.Add(series9);
             this.crtFloorRes.Series.Add(series10);
             this.crtFloorRes.Size = new System.Drawing.Size(578, 295);
             this.crtFloorRes.TabIndex = 0;
-            this.crtFloorRes.Text = "chart1";
             title5.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             title5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
             title5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
@@ -147,7 +145,7 @@
             title5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             title5.Name = "Title1";
-            title5.Text = "各楼层可用资源预览";
+            title5.Text = "All Floors Preview";
             this.crtFloorRes.Titles.Add(title5);
             // 
             // crtDepRes
@@ -185,7 +183,7 @@
             series11.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series11.IsValueShownAsLabel = true;
             series11.Legend = "Legend1";
-            series11.Name = "已用";
+            series11.Name = "Used";
             series12.ChartArea = "ChartArea1";
             series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
             series12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(80)))));
@@ -193,12 +191,11 @@
             series12.IsValueShownAsLabel = true;
             series12.LabelForeColor = System.Drawing.Color.White;
             series12.Legend = "Legend1";
-            series12.Name = "可用";
+            series12.Name = "Usable";
             this.crtDepRes.Series.Add(series11);
             this.crtDepRes.Series.Add(series12);
             this.crtDepRes.Size = new System.Drawing.Size(973, 259);
             this.crtDepRes.TabIndex = 0;
-            this.crtDepRes.Text = "chart1";
             title6.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             title6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(240)))), ((int)(((byte)(217)))));
             title6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
@@ -206,10 +203,10 @@
             title6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             title6.Name = "Title1";
-            title6.Text = "部门可用资源预览";
+            title6.Text = "All Departments Preview";
             this.crtDepRes.Titles.Add(title6);
             // 
-            // FrmStudy
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,9 +218,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmStudy";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "图表研究";
+            this.Text = "Form Chart";
             ((System.ComponentModel.ISupportInitialize)(this.crtTotalInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crtFloorRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crtDepRes)).EndInit();

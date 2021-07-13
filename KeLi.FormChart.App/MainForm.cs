@@ -6,13 +6,14 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml.Serialization;
 
-using KeLi.FormChart.App.DataModels;
+using KeLi.FormChart.App.Models;
+using KeLi.FormChart.App.Properties;
 
 namespace KeLi.FormChart.App
 {
-    public partial class StudyFrm : Form
+    public partial class MainForm : Form
     {
-        public StudyFrm()
+        public MainForm()
         {
             InitializeComponent();
 
